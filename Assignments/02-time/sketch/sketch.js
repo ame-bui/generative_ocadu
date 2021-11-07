@@ -1,5 +1,5 @@
 let faceapi;
-let dectections = [];
+let detections = [];
 
 let video; 
 let canvas;
@@ -29,7 +29,7 @@ function gotFaces(error, result){
         return;
     }
 
-    dectections = result;
+    detections = result;
     console.log(detections);
     faceapi.detect(gotFaces);
 
