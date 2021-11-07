@@ -6,8 +6,12 @@ let canvas;
 
 function setup(){
     canvas = createCanvas(480,360);
+    canvas.id('canvas');
+
     video = createCapture(VIDEO);
     video.size(width,height);
+    canvas.id('video');
+
 
     const faceOptions = {
         withLandmarks: true,
