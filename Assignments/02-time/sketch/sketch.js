@@ -14,9 +14,9 @@ function setup(){
         withExpressions: true,
         withDescriptors: false,
         minConfidence: 0.5
-    }
+    };
 
-    faceapi = ml5.faceApi(video,faceOptions, faceReady)
+    faceapi = ml5.faceApi(video, faceOptions, faceReady)
 }
 
 function faceReady(){
