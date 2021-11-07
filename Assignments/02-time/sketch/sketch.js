@@ -36,5 +36,19 @@ function gotFaces(error, result){
 }
 
 function draw(){
+    clear();
 
+    if(detections.length > 0){ 
+        for(f=0; f< detections.length; f++){
+            let x = detections[0].alignedRect._box._x;
+            let y = detections[0].alignedRect._box._y;
+            let rectWidth = detections[0].alignedRect._box._width;
+            let rectHeight = detections[0].alignedRect._box._height;
+
+            stroke(44, 169, 222);
+            strokeWeight(1);
+            noFill();
+            rect(x,y,rectWidth, rectHeight);
+        }
+    }
 }
