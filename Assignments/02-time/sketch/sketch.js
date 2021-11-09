@@ -50,7 +50,7 @@ function draw(){
     image(video, 0, 0, width, height);
     video.loadPixels();
 
-    frameRate(10);
+    frameRate(5);
 
     let m = millis();
 
