@@ -8,11 +8,11 @@ var myFont, titleFont, monoFont;
 
 
 function preload() {
-  myFont = loadFont('../data/font/Archivo-Regular.ttf');
-  monoFont = loadFont('../data/font/IBMPlexMono-Regular.ttf');
-  titleFont = loadFont('../data/font/Archivo-Black.ttf');
-  for(let i=1; i<12; i++){
-    shopItems[i] = loadImage('../data/images/item-'+ i +'.png');
+  myFont = loadFont('data/font/Archivo-Regular.ttf');
+  monoFont = loadFont('data/font/IBMPlexMono-Regular.ttf');
+  titleFont = loadFont('data/font/Archivo-Black.ttf');
+  for(let i=1; i<10; i++){
+    shopItems[i] = loadImage('data/images/item-'+ i +'.png');
   }
 }
 
