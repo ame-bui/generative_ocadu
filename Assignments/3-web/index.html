@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Safe space</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="myTitle">
+                <h1>Safe space</h1>
+            </div>
+
+            <div id="myCanvas-background"></div>
+            <div id="myCanvas-foreground"></div>
+
+            <div class="instruction">
+                <p id="inst-ctx"> Hover near the zone that best describe your feeling, click and hold. </p>
+            </div>
+            <div class="parameter">
+                <p id="left">Unpleasant</p> 
+                <p id="right"> Pleasant</p>
+                <p id="top">Deactivation</p> 
+                <p id="bottom">Activation</p>
+            </div>
+        </div>
+        <script type="module" src="object.js"></script>
+
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
